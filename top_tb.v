@@ -5,7 +5,7 @@ module top_tb;
     reg [3:0] A, B;
     reg Cin, MS;
     wire [3:0] Anode;
-    wire [7:0] Seg;
+    wire [6:0] Seg;
 
     //Creating unit under testing
     top uut(.A(A), .B(B), .Cin(Cin), .MS(MS), .Anode(Anode), .Seg(Seg));

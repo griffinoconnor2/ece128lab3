@@ -2,7 +2,7 @@ module top(
     input [3:0] A, B,
     input Cin, MS,
     output [3:0] Anode,
-    output [7:0] Seg
+    output [6:0] Seg
 );
 
 //Enable anode corresponding to rightmost 7SD digit
