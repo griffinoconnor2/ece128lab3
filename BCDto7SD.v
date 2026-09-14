@@ -3,9 +3,6 @@ module BCDto7SD (
     output [6:0] Seg;
 );
 
-//Enable anode corresponding to rightmost 7SD digit
-assign an = 4'b1110;
-
 always @(*) begin
     case(in)
         //Input cases 0-F, assign corresponding 7SD output
