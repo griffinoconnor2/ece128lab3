@@ -1,6 +1,6 @@
 module BCDto7SD (
     input [3:0] in,
-    output [6:0] Seg;
+    output [6:0] Seg
 );
 
 always @(*) begin
