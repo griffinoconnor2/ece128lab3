@@ -1,5 +1,5 @@
 module BCDto7SD (
-    input [3:0] in;
+    input [3:0] in,
     output [6:0] Seg;
 );
 
