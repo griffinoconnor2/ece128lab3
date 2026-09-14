@@ -17,7 +17,7 @@ wire [3:0] MO;
 CLA4bit adder (.A(A), .B(B), .Cin(Cin), .S(S), .Cout(Cout));
 
 //Instantiate Mux
-//Mux2to1 mux (.in0(S), .in1(A), .MS(MS), .MO(MO));
+Mux2to1 mux (.in0(S), .in1(A), .MS(MS), .MO(MO));
 
 //Instantaite BCDto7SD 
 BCDto7SD converter (.in(MO), .Seg(Seg));
