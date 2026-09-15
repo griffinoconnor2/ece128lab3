@@ -14,11 +14,11 @@ wire Cout;
 wire [3:0] CoutExt;
 wire [3:0] MO;
 
-//Instantate 4-bit CLA
-CLA4bit adder (.A(A), .B(B), .Cin(Cin), .S(S), .Cout(Cout));
-
 //Concatenate Cout to CoutExt to 4 bits
 assign CoutExt = {3'b000, Cout};
+
+//Instantate 4-bit CLA
+CLA4bit adder (.A(A), .B(B), .Cin(Cin), .S(S), .Cout(Cout));
 
 //Instantiate Mux
 Mux2to1 mux (.in0(S), .in1(CoutExt), .MS(MS), .MO(MO));
