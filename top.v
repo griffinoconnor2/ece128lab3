@@ -21,7 +21,7 @@ CLA4bit adder (.A(A), .B(B), .Cin(Cin), .S(S), .Cout(Cout));
 assign CoutExt = {3'b000, Cout};
 
 //Instantiate Mux
-Mux2to1 mux (.in0(S), .in1(A), .MS(MS), .MO(MO));
+Mux2to1 mux (.in0(S), .in1(CoutExt), .MS(MS), .MO(MO));
 
 //Instantaite BCDto7SD 
 BCDto7SD converter (.in(MO), .Seg(Seg));
